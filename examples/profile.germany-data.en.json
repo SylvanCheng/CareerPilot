@@ -1,0 +1,66 @@
+{
+ "_comment": "Small fictitious example: data analyst / analytics engineer targeting Berlin and Munich, English report, no official sponsor register (Germany: EU Blue Card does not need a licensed sponsor), so sponsorship is 'research' mode.",
+ "version": 1,
+ "report_language": "en",
+ "report_title": "Germany data jobs daily",
+ "timezone": "Europe/Berlin",
+ "output_dir": "output",
+ "search": {
+  "locations": [
+   {"name": "Berlin, Germany", "label": "Berlin"},
+   {"name": "Munich, Bavaria, Germany", "label": "Munich"}
+  ],
+  "time_window_hours": 24,
+  "keywords": ["data analyst", "analytics engineer", "business intelligence", "data engineer", "product analyst"],
+  "max_pages_per_keyword": 40,
+  "parallel": 5
+ },
+ "directions": [
+  {"code": "D", "name": "Data analyst", "title_regex": "\\b(data analyst|product analyst|business analyst|BI analyst|business intelligence|reporting analyst|insights analyst)\\b", "cv_file": "CV_Data_Analyst.pdf", "pitch": "SQL + Python analyst with e-commerce experiments background", "target_titles": "Data Analyst; Product Analyst; BI Analyst"},
+  {"code": "E", "name": "Analytics engineer", "title_regex": "\\b(analytics engineer|data engineer|dbt|data platform)\\b", "cv_file": "CV_Analytics_Engineer.pdf", "pitch": "dbt / Airflow pipelines, modelled data for self-serve BI", "target_titles": "Analytics Engineer; Data Engineer (junior/medior)"}
+ ],
+ "filters": {
+  "exclude_summary": "internships, working students, PhD, manager/head-of roles, sales",
+  "exclude_title_regex": "\\b(intern|internship|praktikum|praktikant\\w*|werkstudent|working student|thesis|abschlussarbeit|phd|director|head of|vice president|VP|principal|staff|chief|manager|sales|recruit\\w*)\\b",
+  "senior_title_regex": "\\b(senior|sr\\.?|lead|expert)\\b",
+  "max_years_experience": 4,
+  "exclude_companies_regex": [],
+  "local_language": {
+   "name": "German",
+   "regex": "german|deutsch\\w*",
+   "drop_if_fluent_required": true,
+   "title_hint_regex": "\\(m/w/d\\)|\\(w/m/d\\)|\\b(mitarbeiter|entwickler|berater|referent|sachbearbeiter)\\w*",
+   "extra_fluent_words": "fließend\\w*|verhandlungssicher\\w*|sehr gute|muttersprach\\w*",
+   "extra_required_words": "fließend\\w*|verhandlungssicher\\w*|zwingend|erforderlich|vorausgesetzt",
+   "extra_soft_words": "wünschenswert|von vorteil|plus|nice",
+   "extra_context_words": "markt|unternehmen|kunden"
+  }
+ },
+ "sponsorship": {
+  "required": true,
+  "label": "Visa support",
+  "info_url": "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card",
+  "notes": "Germany has no licensed-sponsor list; any employer can hire on an EU Blue Card if salary and degree rules are met."
+ },
+ "others_sheet": {"enabled": true, "only_sponsors": false, "max_companies": 40},
+ "tiers": [
+  {"name": "Tier 1", "title": "Tier 1: data-driven scale-ups with English-speaking teams", "rationale": "Best fit for an analyst with e-commerce experiments background; English is the working language.",
+   "companies": [
+    {"name": "Zalando", "sector": "E-commerce", "cities": "Berlin", "directions": "DE", "priority": "A", "match": "Experimentation and pricing analytics", "careers_url": "https://jobs.zalando.com", "sponsor_status": "Y"},
+    {"name": "Delivery Hero", "sector": "Food delivery", "cities": "Berlin", "directions": "DE", "priority": "A", "match": "Marketplace analytics", "careers_url": "https://careers.deliveryhero.com", "sponsor_status": "Y"},
+    {"name": "HelloFresh", "sector": "Food e-commerce", "cities": "Berlin", "directions": "DE", "priority": "B", "match": "Supply chain and CRM analytics", "careers_url": "https://careers.hellofresh.com", "sponsor_status": "Y"}
+   ]},
+  {"name": "Tier 2", "title": "Tier 2: large tech and industry employers with analytics teams", "rationale": "Larger hiring volume, more German-language roles.",
+   "companies": [
+    {"name": "SAP", "sector": "Enterprise software", "cities": "Berlin, Munich", "directions": "DE", "priority": "B", "match": "Product analytics", "careers_url": "https://jobs.sap.com", "aliases": ["^SAP\\b"], "sponsor_status": "Y"},
+    {"name": "Siemens", "sector": "Industry", "cities": "Munich, Berlin", "directions": "E", "priority": "B", "match": "Industrial data platforms", "careers_url": "https://jobs.siemens.com", "aliases": ["^Siemens\\b"], "sponsor_status": "Y"},
+    {"name": "BMW Group", "sector": "Automotive", "cities": "Munich", "directions": "DE", "priority": "C", "match": "Production and sales analytics; often German required", "careers_url": "https://www.bmwgroup.jobs", "aliases": ["^BMW\\b"], "sponsor_status": "U"}
+   ]}
+ ],
+ "background": {"title": "Background and positioning", "rows": [["Name / location", "Your name | city | current permit"], ["Education", "Degree, school, year"], ["Experience", "Most recent roles and results"], ["Languages", "English C1, German A2"], ["Visa goal", "EU Blue Card"]]},
+ "channels": [
+  {"name": "LinkedIn Jobs", "type": "Job board", "url": "https://www.linkedin.com/jobs", "directions": "All", "feature": "Largest English-language tech job source", "tips": "Daily alerts per keyword", "priority": "A"},
+  {"name": "Berlin Startup Jobs", "type": "Startup job board", "url": "https://berlinstartupjobs.com", "directions": "All", "feature": "English-speaking startups", "tips": "Check weekly", "priority": "B"},
+  {"name": "Make it in Germany", "type": "Government portal", "url": "https://www.make-it-in-germany.com", "directions": "All", "feature": "Official visa information and job listings", "tips": "Check Blue Card salary thresholds", "priority": "B"}
+ ]
+}

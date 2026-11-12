@@ -1,0 +1,9 @@
+profile.json
+job-report-workspace/
+output/
+cv/
+*.docx
+*.pdf
+__pycache__/
+*.pyc
+.DS_Store

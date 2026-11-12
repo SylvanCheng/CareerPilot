@@ -1,0 +1,3004 @@
+{
+ "_comment": "Example: tech jobs in the Netherlands (AI / ML-data / backend / consulting) with IND sponsor check, for a persona of a semiconductor-fab process/data engineer moving into AI. Background rows are placeholders. Copy to <workspace>/profile.json and adapt.",
+ "version": 1,
+ "report_language": "zh",
+ "report_title": "荷兰求职日报",
+ "timezone": "Europe/Amsterdam",
+ "output_dir": "output",
+ "search": {
+  "locations": [
+   {
+    "name": "Netherlands",
+    "geo_id": "102890719",
+    "label": "荷兰境内"
+   }
+  ],
+  "time_window_hours": 24,
+  "keywords": [
+   "AI engineer",
+   "machine learning",
+   "LLM",
+   "generative AI",
+   "data scientist",
+   "data engineer",
+   "data analyst",
+   "MLOps",
+   "computer vision",
+   "analytics engineer",
+   "yield",
+   "software engineer",
+   "backend engineer",
+   "python",
+   "java developer",
+   ".NET developer",
+   "full stack developer",
+   "AI consultant",
+   "data consultant",
+   "technology consultant",
+   "solutions engineer",
+   "solution architect",
+   "digital transformation",
+   "applied scientist",
+   "AI"
+  ],
+  "max_pages_per_keyword": 100,
+  "parallel": 5
+ },
+ "directions": [
+  {
+   "code": "A",
+   "name": "AI 工程师",
+   "title_regex": "\\b(AI|A\\.I\\.|artificial intelligence|LLM|LLMs|GenAI|gen ?AI|generative|machine learning|ML|NLP|computer vision|deep learning|agentic|RAG)\\b",
+   "cv_file": "CV_AI_Engineer.docx",
+   "pitch": "一句话定位",
+   "target_titles": "AI Engineer; LLM Engineer; GenAI Engineer; AI Application Engineer; Applied AI; RAG; Agent"
+  },
+  {
+   "code": "M",
+   "name": "ML/数据",
+   "title_regex": "\\b(data (scientist|science|engineer|engineering|analyst|analytics|platform|architect)|analytics engineer|MLOps|yield|process data|business intelligence|BI (developer|engineer|analyst)|statistic\\w*|quant\\w* (developer|researcher)|data specialist|dataspecialist|data-?analist)\\b",
+   "cv_file": "CV_ML_Data.docx",
+   "pitch": "一句话定位",
+   "target_titles": "Machine Learning Engineer; Data Scientist; Data Engineer; Yield/Process Data Analyst; MLOps; Virtual Metrology"
+  },
+  {
+   "code": "S",
+   "name": "软件开发",
+   "title_regex": "\\b(software|backend|back-end|back end|python|java|\\.net|c#|full[- ]?stack|developer|ontwikkelaar|programmer|platform engineer|cloud engineer|devops|site reliability|SRE|application engineer|integration engineer|api)\\b",
+   "cv_file": "CV_Backend.docx",
+   "pitch": "一句话定位",
+   "target_titles": "Backend Engineer; Software Engineer Python; .NET Developer; Java Developer; Software Engineer Manufacturing"
+  },
+  {
+   "code": "T",
+   "name": "技术咨询",
+   "title_regex": "\\b(consultant|(IT|data|AI|BI|cloud|digital\\w*|informatie)[- ]?adviseur|adviseur (IT|data|AI|BI|digital\\w*|informatie\\w*|industriële automatisering)|solutions? (engineer|architect|consultant)|pre-?sales|digital transformation|technical account|forward deployed|solution architect|implementation (engineer|consultant))\\b",
+   "cv_file": "CV_Consultant.docx",
+   "pitch": "一句话定位",
+   "target_titles": "AI Consultant; Data Consultant; Digital Transformation Consultant; Solutions Engineer; Pre-sales; Industry 4.0 Consultant"
+  }
+ ],
+ "filters": {
+  "exclude_summary": "实习、毕业设计、PhD、经理及以上管理岗、销售、纯硬件/嵌入式/机械岗",
+  "exclude_title_regex": "\\b(intern|internship|stage|stagiair|stagiaire|afstudeer\\w*|graduation|thesis|working student|werkstudent|student|phd|postdoc|director|head of|vice president|VP|principal|staff|chief|manager|managing|recruit\\w*|sales (representative|manager|executive)|account (executive|manager)|marketing|accountant|legal|lawyer|nurse|technician|monteur|operator|mechanical|electrical|hardware|FPGA|analog|RF|embedded|firmware|PLC|teacher|docent|jurist|juridisch|HR|business developer|accounting|compliance|SuccessFactors|compensation|payroll|M&A|tax|audit|Workiva|cyber|security|SAP Basis|e-invoicing|e-reporting|CNC|CAM programmer|werktuigbouw\\w*|elektrotechniek|geotechniek|bodem|waterveiligheid|drinkwater|installaties|radar\\w*|HVAC|treasury|financial economic crime|lending|controls assurance|privacy|sales|retail|organisatie\\w*|law|insights|onboarding|lab equipment|bridges|e-mobility|people lead|QA consultant|risk|financial services|workforce|health economics|veterinary|oncology|paid search|SEA|banking|corporate finance|murex|scrum master|agile consultant|cost consultant|practice management|ticketing|high voltage|belastingen|meewerkstage|\\w*stage|CFO|rewards|people advisory|logistics consultant|e-commerce consultant|building|crime prevention|financieel|customer (service|support)|capital markets|asset management|energiemanagement|netcongestie|business development|assortment|apple consultant|cybersecurity|identity|access management|change management|\\w*sourcing|procurement|emissies|mobiliteit|logistiek|finance|account representative|ABOR|strategic plan|project ?manager|metrics officer|teamleider|banken|logistics|portfolio|project management|asset and service|milieu\\w*|game developer|power supply|economist|talent acquisition|incident response|policy|elektriciteit\\w*|hoogspanning|warmte\\w*|energietransitie|electrification|customs|business partner|consultant change|quality assurance|changemanagement|collateral|excise|economisch\\w*|carve-out|supplier relations|faunabeheer|executive assistant|klantzorg|travel consultant|prijs\\w*|due diligence|capital excellence|carbon|LCA|assurance|SOC consultant|order2cash|informatiebeveiliging|leadership development|strategy execution|microgrid|water treatment|tenderbegeleiding|projectmanagement|technisch management|SEO|process improvement|WOZ|lean|forensic\\w*|strategy consultant|deeltijd|process integration|people in deals|transformation consultant|strategie|consultant strategy|investigations|commissioning|circulaire|marketeer|commodity|GRC|process & controls|service\\) operations|future organization|supply chain|planning transformation|cryptografie|PKI|networking|interior)\\b",
+  "senior_title_regex": "\\b(senior|sr\\.?|lead|expert)\\b",
+  "max_years_experience": 5,
+  "exclude_companies_regex": [
+   "Marimecs",
+   "Mimecast",
+   "^VIMEC",
+   "Arnold & Siedsma",
+   "Gebiedsmanagers",
+   "DSM Twilmij",
+   "Cradle to Cradle",
+   "^VDL (Bus|Energy|Enabling Transport)",
+   "Emerson College",
+   "Omron Healthcare",
+   "Mitsubishi Electric Automotive",
+   "Siemens (Energy|Finance|Healthineers|International|eMobility|Mobility)",
+   "^Ingram",
+   "^Ingenico",
+   "^Inge",
+   "Amazonas",
+   "^Lelystad",
+   "^ASMR",
+   "^NNIT",
+   "^Oracle Recruitment"
+  ],
+  "local_language": {
+   "name": "荷兰语",
+   "regex": "dutch|nederlands\\w*",
+   "drop_if_fluent_required": true,
+   "title_hint_regex": "\\b(medewerker|ontwikkelaar|adviseur|beheerder|specialist data|analist|werkvoorbereider|m/v/x|m/v|v/m)\\b",
+   "extra_fluent_words": "vloeiend\\w*|uitstekend\\w*|goede?|moedertaal\\w*",
+   "extra_required_words": "vloeiend\\w*|moedertaal\\w*|vereist|verplicht",
+   "extra_soft_words": "pluspunt|wenselijk|voordeel|niet vereist|geen vereiste|no dutch",
+   "extra_context_words": "markt|bedrijf\\w*|organisatie\\w*|overheid|wet\\w*|klanten|belasting\\w*|zorg\\w*|energie\\w*|samenleving|arbeidsmarkt|publieke|net|steden|infrastructuur"
+  }
+ },
+ "sponsorship": {
+  "required": true,
+  "label": "IND 担保资质",
+  "register": {
+   "name": "IND 担保名录",
+   "file": "skill:data/registers/NL_IND_public_register_work_2026-10-05.xlsx",
+   "name_column": "Organisation",
+   "id_column": "KVK (Chamber of Commerce) number",
+   "id_label": "KVK",
+   "version": "2026-10-05",
+   "url": "https://ind.nl/en/public-register-recognised-sponsors/public-register-work"
+  },
+  "register_exclude_regex": [
+   "Marimecs",
+   "Mimecast",
+   "^VIMEC",
+   "Arnold & Siedsma",
+   "Gebiedsmanagers",
+   "DSM Twilmij",
+   "Cradle to Cradle",
+   "^VDL (Bus|Energy|Enabling Transport)",
+   "Emerson College",
+   "Omron Healthcare",
+   "Mitsubishi Electric Automotive",
+   "Siemens (Energy|Finance|Healthineers|International|eMobility|Mobility)"
+  ]
+ },
+ "others_sheet": {
+  "enabled": true,
+  "only_sponsors": true
+ },
+ "tiers": [
+  {
+   "name": "第一梯队",
+   "title": "第一梯队：半导体供应链、检测设备与微电子",
+   "rationale": "",
+   "companies": [
+    {
+     "name": "ASML",
+     "sector": "光刻机整机 / 量测与检测",
+     "cities": "Veldhoven, Eindhoven, Delft",
+     "directions": "AMST",
+     "priority": "A",
+     "match": "Data/ML Engineer、软件工程师、Yield/Process数据、AI平台；晶圆厂 FDC / 虚拟量测与 fab 数据经验最对口",
+     "careers_url": "https://www.asml.com/en/careers",
+     "aliases": [
+      "^ASML\\b"
+     ],
+     "sponsor_patterns": [
+      "^ASML\\b"
+     ]
+    },
+    {
+     "name": "NXP Semiconductors",
+     "sector": "芯片设计与制造（车规、IoT）",
+     "cities": "Eindhoven, Nijmegen, Delft",
+     "directions": "AMS",
+     "priority": "A",
+     "match": "制造/测试数据分析、MLOps、内部IT与AI应用；Nijmegen有晶圆厂",
+     "careers_url": "https://www.nxp.com/careers",
+     "aliases": [
+      "^NXP\\b"
+     ],
+     "sponsor_patterns": [
+      "^NXP\\b"
+     ]
+    },
+    {
+     "name": "ASM International (ASMI)",
+     "sector": "ALD/外延沉积设备",
+     "cities": "Almere",
+     "directions": "AMS",
+     "priority": "A",
+     "match": "设备数据分析、软件开发、过程控制；CMP/Etch工艺背景是加分项",
+     "careers_url": "https://www.asm.com/careers",
+     "aliases": [
+      "^ASM (Europe|International|IP)"
+     ],
+     "sponsor_patterns": [
+      "^ASM (Europe|International|IP)"
+     ]
+    },
+    {
+     "name": "BE Semiconductor Industries (Besi)",
+     "sector": "先进封装设备（混合键合）",
+     "cities": "Duiven",
+     "directions": "MS",
+     "priority": "A",
+     "match": "设备软件、机器视觉、数据分析",
+     "careers_url": "https://www.besi.com",
+     "aliases": [
+      "^BE Semiconductor",
+      "^Besi\\b"
+     ],
+     "sponsor_patterns": [
+      "^BE Semiconductor",
+      "^Besi\\b"
+     ]
+    },
+    {
+     "name": "Nexperia",
+     "sector": "分立器件 / 功率半导体",
+     "cities": "Nijmegen",
+     "directions": "MS",
+     "priority": "B",
+     "match": "Fab数据、良率分析、制造IT；注意2025年起荷兰政府介入其治理，关注招聘稳定性",
+     "careers_url": "https://www.nexperia.com/careers",
+     "aliases": [
+      "^Nexperia"
+     ],
+     "sponsor_patterns": [
+      "^Nexperia"
+     ]
+    },
+    {
+     "name": "Ampleon",
+     "sector": "RF功率器件",
+     "cities": "Nijmegen",
+     "directions": "MS",
+     "priority": "B",
+     "match": "测试/制造数据分析、软件",
+     "careers_url": "https://www.ampleon.com",
+     "aliases": [
+      "^Ampleon"
+     ],
+     "sponsor_patterns": [
+      "^Ampleon"
+     ]
+    },
+    {
+     "name": "Thermo Fisher Scientific (电子显微镜)",
+     "sector": "电镜与半导体失效分析设备",
+     "cities": "Eindhoven",
+     "directions": "AMS",
+     "priority": "A",
+     "match": "图像AI、软件工程、数据科学；半导体客户应用",
+     "careers_url": "https://jobs.thermofisher.com",
+     "aliases": [
+      "^Thermo Fisher",
+      "^Thermo Fisher"
+     ],
+     "sponsor_patterns": [
+      "^Thermo Fisher"
+     ]
+    },
+    {
+     "name": "Nearfield Instruments",
+     "sector": "半导体量测设备（AFM）",
+     "cities": "Rotterdam",
+     "directions": "AMS",
+     "priority": "A",
+     "match": "量测数据与算法、软件；与虚拟量测经验高度相关",
+     "careers_url": "https://www.nearfieldinstruments.com",
+     "aliases": [
+      "Nearfield"
+     ],
+     "sponsor_patterns": [
+      "Nearfield"
+     ]
+    },
+    {
+     "name": "Applied Materials Europe",
+     "sector": "半导体设备",
+     "cities": "荷兰（以职位为准）",
+     "directions": "MS",
+     "priority": "B",
+     "match": "客户支持与数据分析、软件",
+     "careers_url": "https://www.appliedmaterials.com/careers",
+     "aliases": [
+      "^Applied Materials"
+     ],
+     "sponsor_patterns": [
+      "^Applied Materials"
+     ]
+    },
+    {
+     "name": "VDL ETG",
+     "sector": "ASML核心供应商，精密机电模块",
+     "cities": "Eindhoven, Almelo",
+     "directions": "SM",
+     "priority": "B",
+     "match": "制造数据、软件、工业IT",
+     "careers_url": "https://www.vdletg.com",
+     "aliases": [
+      "^VDL"
+     ],
+     "sponsor_patterns": [
+      "^VDL"
+     ]
+    },
+    {
+     "name": "Prodrive Technologies",
+     "sector": "电力电子 / 运动控制 / 半导体子系统",
+     "cities": "Son (Eindhoven)",
+     "directions": "SA",
+     "priority": "B",
+     "match": "嵌入式与软件开发、测试自动化",
+     "careers_url": "https://prodrive-technologies.com/careers",
+     "aliases": [
+      "^Prodrive"
+     ],
+     "sponsor_patterns": [
+      "^Prodrive"
+     ]
+    },
+    {
+     "name": "NTS Group",
+     "sector": "精密机电模块（半导体设备供应链）",
+     "cities": "Eindhoven, Hengelo",
+     "directions": "S",
+     "priority": "C",
+     "match": "软件与制造数据",
+     "careers_url": "https://www.nts-group.com",
+     "aliases": [
+      "^NTS\\b"
+     ],
+     "sponsor_patterns": [
+      "^NTS\\b"
+     ]
+    },
+    {
+     "name": "Demcon",
+     "sector": "高科技系统开发",
+     "cities": "Enschede, Best, Delft",
+     "directions": "SA",
+     "priority": "B",
+     "match": "系统软件、AI/视觉",
+     "careers_url": "https://www.demcon.com/careers",
+     "aliases": [
+      "^Demcon"
+     ],
+     "sponsor_patterns": [
+      "^Demcon"
+     ]
+    },
+    {
+     "name": "Benchmark Electronics",
+     "sector": "EMS 电子制造服务",
+     "cities": "Almelo",
+     "directions": "SM",
+     "priority": "B",
+     "match": "制造数据、MES/软件",
+     "careers_url": "https://www.bench.com",
+     "aliases": [
+      "^Benchmark Electronics"
+     ],
+     "sponsor_patterns": [
+      "^Benchmark Electronics"
+     ]
+    },
+    {
+     "name": "Kulicke & Soffa",
+     "sector": "封装设备",
+     "cities": "Eindhoven",
+     "directions": "S",
+     "priority": "B",
+     "match": "设备软件",
+     "careers_url": "https://www.kns.com/careers",
+     "aliases": [
+      "Kulicke"
+     ],
+     "sponsor_patterns": [
+      "Kulicke"
+     ]
+    },
+    {
+     "name": "ITEC",
+     "sector": "后道封装测试设备",
+     "cities": "Nijmegen",
+     "directions": "SM",
+     "priority": "B",
+     "match": "设备软件、视觉检测、数据",
+     "careers_url": "https://www.itecequipment.com",
+     "aliases": [
+      "^ITEC\\b"
+     ],
+     "sponsor_patterns": [
+      "^ITEC\\b"
+     ]
+    },
+    {
+     "name": "ASMPT ALSI",
+     "sector": "激光切割/开槽设备",
+     "cities": "Beuningen",
+     "directions": "S",
+     "priority": "C",
+     "match": "设备软件",
+     "careers_url": "https://www.asmpt.com",
+     "aliases": [
+      "^ASMPT"
+     ],
+     "sponsor_patterns": [
+      "^ASMPT"
+     ]
+    },
+    {
+     "name": "Boschman Technologies",
+     "sector": "封装设备",
+     "cities": "Duiven",
+     "directions": "S",
+     "priority": "C",
+     "match": "设备软件",
+     "careers_url": "https://www.boschman.nl",
+     "aliases": [
+      "^Boschman"
+     ],
+     "sponsor_patterns": [
+      "^Boschman"
+     ]
+    },
+    {
+     "name": "Applied Micro Electronics (AME)",
+     "sector": "电子设计与制造",
+     "cities": "Eindhoven",
+     "directions": "S",
+     "priority": "C",
+     "match": "嵌入式/软件",
+     "careers_url": "https://www.ame.nu",
+     "aliases": [
+      "^Applied Micro"
+     ],
+     "sponsor_patterns": [
+      "^Applied Micro"
+     ]
+    },
+    {
+     "name": "\"AAE\" Advanced Automated Equipment",
+     "sector": "自动化设备",
+     "cities": "Helmond",
+     "directions": "S",
+     "priority": "C",
+     "match": "设备软件",
+     "careers_url": "https://www.aae.nl",
+     "aliases": [
+      "AAE.*Advanced Automated"
+     ],
+     "sponsor_patterns": [
+      "AAE.*Advanced Automated"
+     ]
+    },
+    {
+     "name": "Cadence Design Systems",
+     "sector": "EDA 芯片设计软件",
+     "cities": "Eindhoven",
+     "directions": "SA",
+     "priority": "B",
+     "match": "软件开发、AI for EDA",
+     "careers_url": "https://www.cadence.com/en_US/home/company/careers.html",
+     "aliases": [
+      "^Cadence Design"
+     ],
+     "sponsor_patterns": [
+      "^Cadence Design"
+     ]
+    },
+    {
+     "name": "Synopsys Netherlands",
+     "sector": "EDA / IP",
+     "cities": "Eindhoven",
+     "directions": "SA",
+     "priority": "B",
+     "match": "软件开发",
+     "careers_url": "https://careers.synopsys.com",
+     "aliases": [
+      "^Synopsys"
+     ],
+     "sponsor_patterns": [
+      "^Synopsys"
+     ]
+    },
+    {
+     "name": "Smart Photonics",
+     "sector": "光子芯片代工",
+     "cities": "Eindhoven",
+     "directions": "MS",
+     "priority": "B",
+     "match": "Fab数据、良率分析（与晶圆厂经验直接对口）",
+     "careers_url": "https://smartphotonics.nl",
+     "aliases": [
+      "^Smart Photonics"
+     ],
+     "sponsor_patterns": [
+      "^Smart Photonics"
+     ]
+    },
+    {
+     "name": "EFFECT Photonics",
+     "sector": "光子芯片",
+     "cities": "Eindhoven",
+     "directions": "SM",
+     "priority": "C",
+     "match": "软件、测试数据",
+     "careers_url": "https://effectphotonics.com",
+     "aliases": [
+      "^EFFECT Photonics"
+     ],
+     "sponsor_patterns": [
+      "^EFFECT Photonics"
+     ],
+     "sponsor_note": "名录中有 EFFECT Holding B.V.，是否同一公司需确认"
+    },
+    {
+     "name": "Bright Photonics",
+     "sector": "光子集成电路设计",
+     "cities": "Eindhoven",
+     "directions": "S",
+     "priority": "C",
+     "match": "设计软件",
+     "careers_url": "https://www.brightphotonics.eu",
+     "aliases": [
+      "^Bright Photonics"
+     ],
+     "sponsor_patterns": [
+      "^Bright Photonics"
+     ]
+    },
+    {
+     "name": "LioniX International",
+     "sector": "光子集成",
+     "cities": "Enschede",
+     "directions": "SM",
+     "priority": "C",
+     "match": "测试数据",
+     "careers_url": "https://www.lionix-international.com",
+     "aliases": [
+      "^LioniX"
+     ],
+     "sponsor_patterns": [
+      "^LioniX"
+     ]
+    },
+    {
+     "name": "Salland Engineering",
+     "sector": "半导体测试设备与服务",
+     "cities": "Zwolle",
+     "directions": "SM",
+     "priority": "C",
+     "match": "测试软件、数据",
+     "careers_url": "https://www.salland.com",
+     "aliases": [
+      "^Salland"
+     ],
+     "sponsor_patterns": [
+      "^Salland"
+     ]
+    },
+    {
+     "name": "Neways Electronics",
+     "sector": "EMS 电子制造服务",
+     "cities": "Son",
+     "directions": "SM",
+     "priority": "C",
+     "match": "制造数据、软件",
+     "careers_url": "https://www.newayselectronics.com",
+     "aliases": [
+      "^Neways"
+     ],
+     "sponsor_patterns": [
+      "^Neways"
+     ]
+    },
+    {
+     "name": "Frencken Europe",
+     "sector": "机电模块",
+     "cities": "Eindhoven",
+     "directions": "S",
+     "priority": "C",
+     "match": "软件、制造IT",
+     "careers_url": "https://www.frencken.nl",
+     "aliases": [
+      "^Frencken"
+     ],
+     "sponsor_patterns": [
+      "^Frencken"
+     ]
+    },
+    {
+     "name": "TNO (含 Holst Centre)",
+     "sector": "应用研究（半导体、光刻、AI）",
+     "cities": "Delft, Eindhoven",
+     "directions": "AMT",
+     "priority": "B",
+     "match": "AI/数据科学研究员、技术顾问",
+     "careers_url": "https://www.tno.nl/en/careers",
+     "aliases": [
+      "^(Nederlandse Organisatie voor )?Toegepast.Natuurwetenschappelijk",
+      "^TNO\\b",
+      "Holst"
+     ],
+     "sponsor_patterns": [
+      "^(Nederlandse Organisatie voor )?Toegepast.Natuurwetenschappelijk",
+      "^TNO\\b",
+      "Holst"
+     ]
+    },
+    {
+     "name": "imec Netherlands",
+     "sector": "微电子研究",
+     "cities": "Eindhoven, Wageningen",
+     "directions": "AM",
+     "priority": "B",
+     "match": "传感数据与AI研究",
+     "careers_url": "https://www.imec-int.com/en/imec-the-netherlands",
+     "aliases": [
+      "^(Stichting )?imec",
+      "IMEC"
+     ],
+     "sponsor_patterns": [
+      "^(Stichting )?imec",
+      "IMEC"
+     ]
+    },
+    {
+     "name": "Delmic",
+     "sector": "电镜成像系统",
+     "cities": "Delft",
+     "directions": "SA",
+     "priority": "C",
+     "match": "软件、图像处理",
+     "careers_url": "https://www.delmic.com",
+     "aliases": [
+      "^Delmic"
+     ],
+     "sponsor_patterns": [
+      "^Delmic"
+     ]
+    },
+    {
+     "name": "Mecal",
+     "sector": "高科技工程",
+     "cities": "Enschede, Eindhoven",
+     "directions": "S",
+     "priority": "C",
+     "match": "软件",
+     "careers_url": "https://www.mecal.eu",
+     "aliases": [
+      "^Mecal"
+     ],
+     "sponsor_patterns": [
+      "^Mecal"
+     ]
+    },
+    {
+     "name": "Infineon Technologies Nijmegen",
+     "sector": "功率/汽车半导体（研发中心）",
+     "cities": "Nijmegen",
+     "directions": "AMS",
+     "priority": "A",
+     "match": "芯片设计验证、测试数据、软件",
+     "careers_url": "https://www.infineon.com/careers",
+     "aliases": [
+      "^Infineon"
+     ],
+     "sponsor_patterns": [
+      "^Infineon"
+     ]
+    },
+    {
+     "name": "Axelera AI",
+     "sector": "AI 推理芯片（初创独角兽）",
+     "cities": "Eindhoven",
+     "directions": "AMS",
+     "priority": "A",
+     "match": "AI 编译器/软件栈、ML 工程；AI×芯片交叉，非常对口",
+     "careers_url": "https://www.axelera.ai/careers",
+     "aliases": [
+      "^Axelera"
+     ],
+     "sponsor_patterns": [
+      "^Axelera"
+     ]
+    },
+    {
+     "name": "Carl Zeiss (荷兰)",
+     "sector": "光学与半导体检测（ASML 光学伙伴）",
+     "cities": "荷兰（以职位为准）",
+     "directions": "MS",
+     "priority": "B",
+     "match": "销售/服务/应用为主，研发多在德国，可作欧洲 sponsor 跳板",
+     "careers_url": "https://www.zeiss.com/corporate/en/careers.html",
+     "aliases": [
+      "^Carl Zeiss"
+     ],
+     "sponsor_patterns": [
+      "^Carl Zeiss"
+     ]
+    },
+    {
+     "name": "TRUMPF Nederland",
+     "sector": "激光与 EUV 光源驱动激光",
+     "cities": "荷兰（以职位为准）",
+     "directions": "S",
+     "priority": "C",
+     "match": "德国总部，可作欧洲 sponsor 备选",
+     "careers_url": "https://www.trumpf.com/en_INT/careers",
+     "aliases": [
+      "^TRUMPF"
+     ],
+     "sponsor_patterns": [
+      "^TRUMPF"
+     ]
+    },
+    {
+     "name": "Lam Research International",
+     "sector": "刻蚀/沉积设备",
+     "cities": "荷兰（以职位为准）",
+     "directions": "MS",
+     "priority": "B",
+     "match": "客户服务与数据；Etch 工艺背景直接相关",
+     "careers_url": "https://careers.lamresearch.com",
+     "aliases": [
+      "^Lam Research"
+     ],
+     "sponsor_patterns": [
+      "^Lam Research"
+     ]
+    },
+    {
+     "name": "Tokyo Electron Europe (荷兰分公司)",
+     "sector": "半导体设备",
+     "cities": "Amsterdam / 以职位为准",
+     "directions": "MS",
+     "priority": "B",
+     "match": "现场应用与数据；涂胶显影/刻蚀设备",
+     "careers_url": "https://www.tel.com/careers",
+     "aliases": [
+      "^Tokyo Electron"
+     ],
+     "sponsor_patterns": [
+      "^Tokyo Electron"
+     ]
+    },
+    {
+     "name": "Hitachi High-Tech Europe (荷兰办公室)",
+     "sector": "半导体量测/检测设备",
+     "cities": "以职位为准",
+     "directions": "MS",
+     "priority": "C",
+     "match": "量测设备，与虚拟量测相关",
+     "careers_url": "https://www.hitachi-hightech.com/eu",
+     "aliases": [
+      "^Hitachi High"
+     ],
+     "sponsor_patterns": [
+      "^Hitachi High"
+     ]
+    },
+    {
+     "name": "Teledyne DALSA",
+     "sector": "图像传感器与机器视觉",
+     "cities": "Eindhoven",
+     "directions": "AMS",
+     "priority": "B",
+     "match": "图像传感器、视觉算法、软件",
+     "careers_url": "https://www.teledyne.com/careers",
+     "aliases": [
+      "^Teledyne DALSA"
+     ],
+     "sponsor_patterns": [
+      "^Teledyne DALSA"
+     ]
+    },
+    {
+     "name": "ams OSRAM (ams Sensors Netherlands)",
+     "sector": "光学传感器",
+     "cities": "Eindhoven",
+     "directions": "MS",
+     "priority": "C",
+     "match": "传感器测试与数据",
+     "careers_url": "https://ams-osram.com/careers",
+     "aliases": [
+      "^ams Sensors"
+     ],
+     "sponsor_patterns": [
+      "^ams Sensors"
+     ]
+    },
+    {
+     "name": "Trymax Semiconductor Equipment",
+     "sector": "去胶/等离子设备",
+     "cities": "Nijmegen",
+     "directions": "S",
+     "priority": "C",
+     "match": "设备软件",
+     "careers_url": "https://www.trymax-semiconductor.com",
+     "aliases": [
+      "^Trymax"
+     ],
+     "sponsor_patterns": [
+      "^Trymax"
+     ]
+    },
+    {
+     "name": "Nikon Europe",
+     "sector": "光刻与光学设备（欧洲总部）",
+     "cities": "Amstelveen",
+     "directions": "SM",
+     "priority": "C",
+     "match": "以销售与服务为主",
+     "careers_url": "https://www.nikon.com/company/careers",
+     "aliases": [
+      "^Nikon"
+     ],
+     "sponsor_patterns": [
+      "^Nikon"
+     ]
+    },
+    {
+     "name": "Hamamatsu Photonics (荷兰办公室)",
+     "sector": "光电器件",
+     "cities": "以职位为准",
+     "directions": "M",
+     "priority": "C",
+     "match": "以销售与应用为主",
+     "careers_url": "https://www.hamamatsu.com",
+     "aliases": [
+      "^Hamamatsu"
+     ],
+     "sponsor_patterns": [
+      "^Hamamatsu"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "第二梯队",
+   "title": "第二梯队：工业自动化、数字孪生、工业 AI 软件、工业 4.0 与物联网",
+   "rationale": "",
+   "companies": [
+    {
+     "name": "Siemens Nederland（含 Digital Industries Software、Mendix）",
+     "sector": "工业自动化、数字孪生、PLM/低代码",
+     "cities": "Den Haag, Rotterdam (Mendix)",
+     "directions": "AMST",
+     "priority": "A",
+     "match": "工业AI、数字孪生、软件开发、解决方案顾问；最贴近“工业AI”定位",
+     "careers_url": "https://www.siemens.com/nl/nl/bedrijf/jobs.html",
+     "aliases": [
+      "^Siemens",
+      "^Mendix"
+     ],
+     "sponsor_patterns": [
+      "^Siemens",
+      "^Mendix"
+     ],
+     "sponsor_note": "Mendix 本身不在名录；Siemens Industry Software Netherlands B.V. 在"
+    },
+    {
+     "name": "Bosch（含 Bosch Transmission Technology, Tilburg）",
+     "sector": "工业制造 / 工业4.0",
+     "cities": "Tilburg, Hoofddorp, Boxtel",
+     "directions": "AMST",
+     "priority": "A",
+     "match": "制造数据、质量预测；产线数据经验可作谈资",
+     "careers_url": "https://www.bosch.nl/werken-bij",
+     "aliases": [
+      "^(Robert )?Bosch\\b(?! en Slabbers)(?! Rexroth)"
+     ],
+     "sponsor_patterns": [
+      "^(Robert )?Bosch\\b(?! en Slabbers)(?! Rexroth)"
+     ]
+    },
+    {
+     "name": "Bosch Rexroth",
+     "sector": "液压与运动控制",
+     "cities": "Boxtel",
+     "directions": "SM",
+     "priority": "B",
+     "match": "工业软件、数据",
+     "careers_url": "https://www.boschrexroth.com/nl/nl/carriere",
+     "aliases": [
+      "^Bosch Rexroth"
+     ],
+     "sponsor_patterns": [
+      "^Bosch Rexroth"
+     ]
+    },
+    {
+     "name": "ABB",
+     "sector": "工业自动化、电气、机器人",
+     "cities": "Rotterdam, Delft",
+     "directions": "AMS",
+     "priority": "B",
+     "match": "工业软件、数据分析",
+     "careers_url": "https://careers.abb",
+     "aliases": [
+      "^ABB\\b"
+     ],
+     "sponsor_patterns": [
+      "^ABB\\b"
+     ]
+    },
+    {
+     "name": "AVEVA",
+     "sector": "工业软件 / 数字孪生",
+     "cities": "荷兰（以职位为准）",
+     "directions": "AMST",
+     "priority": "A",
+     "match": "工业数据平台(PI System)、解决方案顾问",
+     "careers_url": "https://www.aveva.com/en/about/careers",
+     "aliases": [
+      "^AVEVA"
+     ],
+     "sponsor_patterns": [
+      "^AVEVA"
+     ]
+    },
+    {
+     "name": "Schneider Electric",
+     "sector": "能源管理与工业自动化",
+     "cities": "Hoofddorp",
+     "directions": "MST",
+     "priority": "B",
+     "match": "工业IoT、数据、售前顾问",
+     "careers_url": "https://www.se.com/nl/nl/about-us/careers",
+     "aliases": [
+      "^Schneider Electric"
+     ],
+     "sponsor_patterns": [
+      "^Schneider Electric"
+     ]
+    },
+    {
+     "name": "Canon Production Printing",
+     "sector": "工业打印设备（原Océ）",
+     "cities": "Venlo",
+     "directions": "AMS",
+     "priority": "A",
+     "match": "设备数据、AI、软件；研发中心在Venlo",
+     "careers_url": "https://cpp.canon/careers",
+     "aliases": [
+      "^Canon Production"
+     ],
+     "sponsor_patterns": [
+      "^Canon Production"
+     ]
+    },
+    {
+     "name": "Signify (原Philips Lighting)",
+     "sector": "智能照明 / IoT",
+     "cities": "Eindhoven",
+     "directions": "AMS",
+     "priority": "A",
+     "match": "IoT数据、软件、AI",
+     "careers_url": "https://www.careers.signify.com",
+     "aliases": [
+      "^Signify"
+     ],
+     "sponsor_patterns": [
+      "^Signify"
+     ]
+    },
+    {
+     "name": "Vanderlande",
+     "sector": "物流自动化与仓储机器人",
+     "cities": "Veghel",
+     "directions": "AMS",
+     "priority": "A",
+     "match": "仿真、数字孪生、软件、数据",
+     "careers_url": "https://careers.vanderlande.com",
+     "aliases": [
+      "^Vanderlande"
+     ],
+     "sponsor_patterns": [
+      "^Vanderlande"
+     ]
+    },
+    {
+     "name": "Yokogawa Europe",
+     "sector": "过程自动化",
+     "cities": "Amersfoort",
+     "directions": "MST",
+     "priority": "B",
+     "match": "工业数据、OT/IT顾问",
+     "careers_url": "https://www.yokogawa.com/eu",
+     "aliases": [
+      "^Yokogawa"
+     ],
+     "sponsor_patterns": [
+      "^Yokogawa"
+     ]
+    },
+    {
+     "name": "Emerson Automation Solutions",
+     "sector": "过程自动化",
+     "cities": "荷兰（以职位为准）",
+     "directions": "MS",
+     "priority": "C",
+     "match": "工业软件",
+     "careers_url": "https://www.emerson.com/en-us/careers",
+     "aliases": [
+      "^Emerson"
+     ],
+     "sponsor_patterns": [
+      "^Emerson"
+     ]
+    },
+    {
+     "name": "Rockwell Automation",
+     "sector": "工业自动化",
+     "cities": "Capelle aan den IJssel",
+     "directions": "ST",
+     "priority": "C",
+     "match": "工业软件、售前",
+     "careers_url": "https://www.rockwellautomation.com/en-us/careers.html",
+     "aliases": [
+      "^Rockwell"
+     ],
+     "sponsor_patterns": [
+      "^Rockwell"
+     ]
+    },
+    {
+     "name": "Honeywell",
+     "sector": "过程自动化 / 楼宇",
+     "cities": "荷兰（以职位为准）",
+     "directions": "SM",
+     "priority": "C",
+     "match": "工业软件",
+     "careers_url": "https://careers.honeywell.com",
+     "aliases": [
+      "^Honeywell"
+     ],
+     "sponsor_patterns": [
+      "^Honeywell"
+     ]
+    },
+    {
+     "name": "Omron Europe",
+     "sector": "工业自动化",
+     "cities": "Hoofddorp",
+     "directions": "ST",
+     "priority": "C",
+     "match": "工业软件",
+     "careers_url": "https://industrial.omron.eu",
+     "aliases": [
+      "^Omron"
+     ],
+     "sponsor_patterns": [
+      "^Omron"
+     ]
+    },
+    {
+     "name": "Mitsubishi Electric Europe",
+     "sector": "工业自动化",
+     "cities": "Amstelveen",
+     "directions": "ST",
+     "priority": "C",
+     "match": "工业软件",
+     "careers_url": "https://nl.mitsubishielectric.com",
+     "aliases": [
+      "^Mitsubishi Electric"
+     ],
+     "sponsor_patterns": [
+      "^Mitsubishi Electric"
+     ]
+    },
+    {
+     "name": "Dassault Systèmes Nederland",
+     "sector": "PLM / 数字孪生软件",
+     "cities": "荷兰（以职位为准）",
+     "directions": "ST",
+     "priority": "B",
+     "match": "解决方案顾问、软件",
+     "careers_url": "https://www.3ds.com/careers",
+     "aliases": [
+      "^Dassault"
+     ],
+     "sponsor_patterns": [
+      "^Dassault"
+     ]
+    },
+    {
+     "name": "Lely",
+     "sector": "农业机器人",
+     "cities": "Maassluis",
+     "directions": "AS",
+     "priority": "B",
+     "match": "机器人软件、AI视觉、数据",
+     "careers_url": "https://www.lely.com/careers",
+     "aliases": [
+      "^Lely\\b"
+     ],
+     "sponsor_patterns": [
+      "^Lely\\b"
+     ]
+    },
+    {
+     "name": "Marel",
+     "sector": "食品加工设备",
+     "cities": "Boxmeer",
+     "directions": "SM",
+     "priority": "C",
+     "match": "设备软件、数据",
+     "careers_url": "https://marel.com/careers",
+     "aliases": [
+      "^Marel\\b"
+     ],
+     "sponsor_patterns": [
+      "^Marel\\b"
+     ]
+    },
+    {
+     "name": "Tata Steel Nederland",
+     "sector": "钢铁制造 / 工业AI",
+     "cities": "IJmuiden",
+     "directions": "AMT",
+     "priority": "B",
+     "match": "过程数据、预测模型（与虚拟量测思路一致）",
+     "careers_url": "https://www.tatasteelnederland.com/werken-bij",
+     "aliases": [
+      "^Tata Steel"
+     ],
+     "sponsor_patterns": [
+      "^Tata Steel"
+     ]
+    },
+    {
+     "name": "DAF Trucks",
+     "sector": "商用车制造",
+     "cities": "Eindhoven",
+     "directions": "MS",
+     "priority": "B",
+     "match": "制造数据、IT",
+     "careers_url": "https://www.werkenbijdaf.nl",
+     "aliases": [
+      "^DAF\\b"
+     ],
+     "sponsor_patterns": [
+      "^DAF\\b"
+     ]
+    },
+    {
+     "name": "Avular",
+     "sector": "移动机器人",
+     "cities": "Eindhoven",
+     "directions": "AS",
+     "priority": "B",
+     "match": "机器人软件、AI",
+     "careers_url": "https://www.avular.com",
+     "aliases": [
+      "^Avular"
+     ],
+     "sponsor_patterns": [
+      "^Avular"
+     ]
+    },
+    {
+     "name": "Smart Robotics",
+     "sector": "拣选机器人",
+     "cities": "Best",
+     "directions": "AS",
+     "priority": "B",
+     "match": "机器人软件、视觉",
+     "careers_url": "https://www.smart-robotics.io",
+     "aliases": [
+      "^Smart Robotics"
+     ],
+     "sponsor_patterns": [
+      "^Smart Robotics"
+     ]
+    },
+    {
+     "name": "Alfen",
+     "sector": "储能与充电设备",
+     "cities": "Almere",
+     "directions": "SM",
+     "priority": "B",
+     "match": "IoT软件、数据",
+     "careers_url": "https://alfen.com",
+     "aliases": [
+      "^Alfen\\b"
+     ],
+     "sponsor_patterns": [
+      "^Alfen\\b"
+     ]
+    },
+    {
+     "name": "Atlas Copco",
+     "sector": "压缩机与工业设备",
+     "cities": "荷兰（以职位为准）",
+     "directions": "SM",
+     "priority": "C",
+     "match": "工业IoT",
+     "careers_url": "https://www.atlascopcogroup.com/en/careers",
+     "aliases": [
+      "^Atlas Copco"
+     ],
+     "sponsor_patterns": [
+      "^Atlas Copco"
+     ]
+    },
+    {
+     "name": "Axians",
+     "sector": "工业IT/OT集成、IoT",
+     "cities": "荷兰多地",
+     "directions": "ST",
+     "priority": "B",
+     "match": "OT/IT集成顾问",
+     "careers_url": "https://www.axians.nl",
+     "aliases": [
+      "^Axians"
+     ],
+     "sponsor_patterns": [
+      "^Axians"
+     ]
+    },
+    {
+     "name": "Royal HaskoningDHV（含 Twinn 数字孪生）",
+     "sector": "工程咨询 / 数字孪生",
+     "cities": "Amersfoort",
+     "directions": "AMT",
+     "priority": "B",
+     "match": "数字孪生、数据顾问",
+     "careers_url": "https://www.royalhaskoningdhv.com/en/careers",
+     "aliases": [
+      "HaskoningDHV",
+      "^Twinn"
+     ],
+     "sponsor_patterns": [
+      "HaskoningDHV",
+      "^Twinn"
+     ]
+    },
+    {
+     "name": "Arcadis",
+     "sector": "工程咨询 / 数字化",
+     "cities": "Amsterdam",
+     "directions": "MT",
+     "priority": "B",
+     "match": "数据与数字化顾问",
+     "careers_url": "https://www.arcadis.com/en/careers",
+     "aliases": [
+      "^Arcadis"
+     ],
+     "sponsor_patterns": [
+      "^Arcadis"
+     ]
+    },
+    {
+     "name": "Fugro",
+     "sector": "地理数据与海洋工程",
+     "cities": "Leidschendam",
+     "directions": "AM",
+     "priority": "B",
+     "match": "传感/时序数据、AI",
+     "careers_url": "https://www.fugro.com/careers",
+     "aliases": [
+      "^Fugro"
+     ],
+     "sponsor_patterns": [
+      "^Fugro"
+     ]
+    },
+    {
+     "name": "TenneT",
+     "sector": "输电网 / 能源数字化",
+     "cities": "Arnhem",
+     "directions": "MS",
+     "priority": "B",
+     "match": "电网数据、软件",
+     "careers_url": "https://www.tennet.eu/careers",
+     "aliases": [
+      "^TenneT"
+     ],
+     "sponsor_patterns": [
+      "^TenneT"
+     ]
+    },
+    {
+     "name": "Alliander",
+     "sector": "配电网",
+     "cities": "Arnhem",
+     "directions": "MS",
+     "priority": "B",
+     "match": "数据科学、软件",
+     "careers_url": "https://www.werkenbijalliander.nl",
+     "aliases": [
+      "^Alliander"
+     ],
+     "sponsor_patterns": [
+      "^Alliander"
+     ]
+    },
+    {
+     "name": "Priva",
+     "sector": "楼宇与温室自动化",
+     "cities": "De Lier",
+     "directions": "SM",
+     "priority": "C",
+     "match": "IoT软件、数据",
+     "careers_url": "https://www.priva.com",
+     "aliases": [
+      "^Priva\\b"
+     ],
+     "sponsor_patterns": [
+      "^Priva\\b"
+     ]
+    },
+    {
+     "name": "Nedap",
+     "sector": "IoT / RFID",
+     "cities": "Groenlo",
+     "directions": "S",
+     "priority": "C",
+     "match": "软件开发",
+     "careers_url": "https://nedap.com/careers",
+     "aliases": [
+      "^Nedap"
+     ],
+     "sponsor_patterns": [
+      "^Nedap"
+     ]
+    },
+    {
+     "name": "Additive Industries",
+     "sector": "金属3D打印设备",
+     "cities": "Eindhoven",
+     "directions": "S",
+     "priority": "C",
+     "match": "设备软件",
+     "careers_url": "https://www.additiveindustries.com",
+     "aliases": [
+      "^Additive Industries"
+     ],
+     "sponsor_patterns": [
+      "^Additive Industries"
+     ]
+    },
+    {
+     "name": "Beckhoff Automation",
+     "sector": "PC-based 工业控制",
+     "cities": "荷兰（以职位为准）",
+     "directions": "ST",
+     "priority": "C",
+     "match": "工业软件、应用工程师",
+     "careers_url": "https://www.beckhoff.com/en-en/company/careers",
+     "aliases": [
+      "^Beckhoff"
+     ],
+     "sponsor_patterns": [
+      "^Beckhoff"
+     ]
+    },
+    {
+     "name": "Sensorfact",
+     "sector": "工业物联网能耗监测（初创）",
+     "cities": "Utrecht",
+     "directions": "AMS",
+     "priority": "B",
+     "match": "IoT 数据分析、后端；工业 AI 小而对口",
+     "careers_url": "https://www.sensorfact.nl",
+     "aliases": [
+      "^Sensorfact"
+     ],
+     "sponsor_patterns": [
+      "^Sensorfact"
+     ]
+    },
+    {
+     "name": "Prime Vision",
+     "sector": "AI 视觉分拣与 OCR",
+     "cities": "Delft",
+     "directions": "AS",
+     "priority": "B",
+     "match": "计算机视觉、软件",
+     "careers_url": "https://www.primevision.com",
+     "aliases": [
+      "^Prime Vision"
+     ],
+     "sponsor_patterns": [
+      "^Prime Vision"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "第三梯队",
+   "title": "第三梯队：科技与金融巨头；工业/高科技咨询与外包供应商",
+   "rationale": "",
+   "companies": [
+    {
+     "name": "Booking.com",
+     "sector": "在线旅游 / 大型科技",
+     "cities": "Amsterdam",
+     "directions": "AMS",
+     "priority": "A",
+     "match": "ML、数据、后端；国际化程度极高",
+     "careers_url": "https://jobs.booking.com",
+     "aliases": [
+      "^Booking\\.com"
+     ],
+     "sponsor_patterns": [
+      "^Booking\\.com"
+     ]
+    },
+    {
+     "name": "Adyen",
+     "sector": "支付科技",
+     "cities": "Amsterdam",
+     "directions": "AMS",
+     "priority": "A",
+     "match": "后端(Java)、数据、ML",
+     "careers_url": "https://careers.adyen.com",
+     "aliases": [
+      "^Adyen"
+     ],
+     "sponsor_patterns": [
+      "^Adyen"
+     ]
+    },
+    {
+     "name": "Amazon / AWS",
+     "sector": "云计算",
+     "cities": "Amsterdam",
+     "directions": "AMST",
+     "priority": "A",
+     "match": "解决方案架构师、AI/ML、软件",
+     "careers_url": "https://www.amazon.jobs",
+     "aliases": [
+      "^Amazon",
+      "^AWS",
+      "^Amazon"
+     ],
+     "sponsor_patterns": [
+      "^Amazon"
+     ]
+    },
+    {
+     "name": "Microsoft Nederland",
+     "sector": "云与AI",
+     "cities": "Amsterdam (Schiphol)",
+     "directions": "AMST",
+     "priority": "B",
+     "match": "云/AI解决方案、顾问",
+     "careers_url": "https://careers.microsoft.com",
+     "aliases": [
+      "^Microsoft"
+     ],
+     "sponsor_patterns": [
+      "^Microsoft"
+     ]
+    },
+    {
+     "name": "Google Netherlands",
+     "sector": "科技",
+     "cities": "Amsterdam",
+     "directions": "AMS",
+     "priority": "C",
+     "match": "竞争激烈，可作为冲刺目标",
+     "careers_url": "https://careers.google.com",
+     "aliases": [
+      "^Google"
+     ],
+     "sponsor_patterns": [
+      "^Google"
+     ]
+    },
+    {
+     "name": "IBM Nederland",
+     "sector": "企业IT与AI咨询",
+     "cities": "Amsterdam",
+     "directions": "AMST",
+     "priority": "B",
+     "match": "AI咨询、数据工程",
+     "careers_url": "https://www.ibm.com/careers",
+     "aliases": [
+      "^IBM\\b"
+     ],
+     "sponsor_patterns": [
+      "^IBM\\b"
+     ]
+    },
+    {
+     "name": "Oracle Nederland",
+     "sector": "企业软件 / 云",
+     "cities": "Utrecht",
+     "directions": "ST",
+     "priority": "C",
+     "match": "软件、售前",
+     "careers_url": "https://careers.oracle.com",
+     "aliases": [
+      "^Oracle"
+     ],
+     "sponsor_patterns": [
+      "^Oracle"
+     ]
+    },
+    {
+     "name": "SAP Nederland",
+     "sector": "企业软件",
+     "cities": "'s-Hertogenbosch",
+     "directions": "ST",
+     "priority": "B",
+     "match": "SAP+AI顾问、开发",
+     "careers_url": "https://jobs.sap.com",
+     "aliases": [
+      "^SAP\\b"
+     ],
+     "sponsor_patterns": [
+      "^SAP\\b"
+     ]
+    },
+    {
+     "name": "Salesforce",
+     "sector": "CRM / AI Agent",
+     "cities": "Amsterdam",
+     "directions": "ST",
+     "priority": "C",
+     "match": "解决方案工程师",
+     "careers_url": "https://careers.salesforce.com",
+     "aliases": [
+      "^Salesforce"
+     ],
+     "sponsor_patterns": [
+      "^Salesforce"
+     ]
+    },
+    {
+     "name": "ServiceNow",
+     "sector": "企业工作流自动化",
+     "cities": "Amsterdam",
+     "directions": "SAT",
+     "priority": "B",
+     "match": "工作流自动化+AI，契合“办公自动化+AI”",
+     "careers_url": "https://careers.servicenow.com",
+     "aliases": [
+      "^ServiceNow"
+     ],
+     "sponsor_patterns": [
+      "^ServiceNow"
+     ]
+    },
+    {
+     "name": "Databricks",
+     "sector": "数据与AI平台",
+     "cities": "Amsterdam",
+     "directions": "AMS",
+     "priority": "B",
+     "match": "数据/AI工程、解决方案",
+     "careers_url": "https://www.databricks.com/company/careers",
+     "aliases": [
+      "^Databricks"
+     ],
+     "sponsor_patterns": [
+      "^Databricks"
+     ]
+    },
+    {
+     "name": "Elastic",
+     "sector": "搜索与可观测",
+     "cities": "Amsterdam",
+     "directions": "S",
+     "priority": "C",
+     "match": "远程较多",
+     "careers_url": "https://www.elastic.co/careers",
+     "aliases": [
+      "^Elastic$",
+      "^Elastic(search)?\\b"
+     ],
+     "sponsor_patterns": [
+      "^Elastic(search)?\\b"
+     ]
+    },
+    {
+     "name": "Atlassian",
+     "sector": "协作软件",
+     "cities": "Amsterdam",
+     "directions": "SA",
+     "priority": "C",
+     "match": "软件开发",
+     "careers_url": "https://www.atlassian.com/company/careers",
+     "aliases": [
+      "^Atlassian"
+     ],
+     "sponsor_patterns": [
+      "^Atlassian"
+     ]
+    },
+    {
+     "name": "Adobe",
+     "sector": "软件",
+     "cities": "Amsterdam",
+     "directions": "SA",
+     "priority": "C",
+     "match": "软件",
+     "careers_url": "https://careers.adobe.com",
+     "aliases": [
+      "^Adobe"
+     ],
+     "sponsor_patterns": [
+      "^Adobe"
+     ]
+    },
+    {
+     "name": "Uber",
+     "sector": "出行科技",
+     "cities": "Amsterdam",
+     "directions": "AMS",
+     "priority": "B",
+     "match": "EMEA总部，数据/后端",
+     "careers_url": "https://www.uber.com/careers",
+     "aliases": [
+      "^Uber\\b"
+     ],
+     "sponsor_patterns": [
+      "^Uber\\b"
+     ]
+    },
+    {
+     "name": "bol.com",
+     "sector": "电商",
+     "cities": "Utrecht",
+     "directions": "AMS",
+     "priority": "B",
+     "match": "数据科学、后端",
+     "careers_url": "https://careers.bol.com",
+     "aliases": [
+      "^Bol\\.com"
+     ],
+     "sponsor_patterns": [
+      "^Bol\\.com"
+     ]
+    },
+    {
+     "name": "Picnic",
+     "sector": "生鲜电商 / 自动化仓储",
+     "cities": "Amsterdam",
+     "directions": "AMS",
+     "priority": "B",
+     "match": "数据、自动化仓储软件",
+     "careers_url": "https://jobs.picnic.app",
+     "aliases": [
+      "^Picnic"
+     ],
+     "sponsor_patterns": [
+      "^Picnic"
+     ]
+    },
+    {
+     "name": "Just Eat Takeaway.com",
+     "sector": "外卖平台",
+     "cities": "Amsterdam",
+     "directions": "MS",
+     "priority": "C",
+     "match": "数据、后端",
+     "careers_url": "https://careers.justeattakeaway.com",
+     "aliases": [
+      "Takeaway",
+      "Just Eat"
+     ],
+     "sponsor_patterns": [
+      "Takeaway",
+      "Just Eat"
+     ]
+    },
+    {
+     "name": "Mollie",
+     "sector": "支付",
+     "cities": "Amsterdam",
+     "directions": "S",
+     "priority": "C",
+     "match": "后端",
+     "careers_url": "https://jobs.mollie.com",
+     "aliases": [
+      "^Mollie"
+     ],
+     "sponsor_patterns": [
+      "^Mollie"
+     ]
+    },
+    {
+     "name": "bunq",
+     "sector": "数字银行",
+     "cities": "Amsterdam",
+     "directions": "AS",
+     "priority": "B",
+     "match": "AI应用、后端",
+     "careers_url": "https://www.bunq.com/careers",
+     "aliases": [
+      "^bunq"
+     ],
+     "sponsor_patterns": [
+      "^bunq"
+     ]
+    },
+    {
+     "name": "Backbase",
+     "sector": "银行软件",
+     "cities": "Amsterdam",
+     "directions": "ST",
+     "priority": "B",
+     "match": "Java后端、解决方案顾问",
+     "careers_url": "https://www.backbase.com/careers",
+     "aliases": [
+      "^Backbase"
+     ],
+     "sponsor_patterns": [
+      "^Backbase"
+     ]
+    },
+    {
+     "name": "Bitvavo",
+     "sector": "加密交易所",
+     "cities": "Amsterdam",
+     "directions": "MS",
+     "priority": "C",
+     "match": "后端、数据",
+     "careers_url": "https://bitvavo.com/careers",
+     "aliases": [
+      "^Bitvavo"
+     ],
+     "sponsor_patterns": [
+      "^Bitvavo"
+     ]
+    },
+    {
+     "name": "Optiver",
+     "sector": "量化交易",
+     "cities": "Amsterdam",
+     "directions": "MS",
+     "priority": "C",
+     "match": "门槛高；软件/数据",
+     "careers_url": "https://optiver.com/working-at-optiver",
+     "aliases": [
+      "^Optiver"
+     ],
+     "sponsor_patterns": [
+      "^Optiver"
+     ]
+    },
+    {
+     "name": "IMC Trading",
+     "sector": "量化交易",
+     "cities": "Amsterdam",
+     "directions": "MS",
+     "priority": "C",
+     "match": "门槛高",
+     "careers_url": "https://www.imc.com/eu/careers",
+     "aliases": [
+      "^IMC$",
+      "^IMC (Trading|Financial)"
+     ],
+     "sponsor_patterns": [
+      "^IMC (Trading|Financial)"
+     ]
+    },
+    {
+     "name": "ING",
+     "sector": "银行",
+     "cities": "Amsterdam",
+     "directions": "AMST",
+     "priority": "A",
+     "match": "AI/GenAI、数据、内部自动化；国际岗多",
+     "careers_url": "https://www.ing.jobs",
+     "aliases": [
+      "^ING$",
+      "^ING (Bank|Nederland|Tech)",
+      "^ING (Bank|Groep|Tech)",
+      "^ING\\b"
+     ],
+     "sponsor_patterns": [
+      "^ING (Bank|Groep|Tech)",
+      "^ING\\b"
+     ]
+    },
+    {
+     "name": "ABN AMRO",
+     "sector": "银行",
+     "cities": "Amsterdam",
+     "directions": "AMST",
+     "priority": "A",
+     "match": "数据、AI、自动化",
+     "careers_url": "https://www.werkenbijabnamro.nl",
+     "aliases": [
+      "^ABN AMRO"
+     ],
+     "sponsor_patterns": [
+      "^ABN AMRO"
+     ]
+    },
+    {
+     "name": "Rabobank",
+     "sector": "银行",
+     "cities": "Utrecht",
+     "directions": "AMST",
+     "priority": "B",
+     "match": "数据、AI",
+     "careers_url": "https://werkenbij.rabobank.nl",
+     "aliases": [
+      "Rabobank"
+     ],
+     "sponsor_patterns": [
+      "Rabobank"
+     ]
+    },
+    {
+     "name": "Aegon",
+     "sector": "保险",
+     "cities": "Den Haag",
+     "directions": "MST",
+     "priority": "B",
+     "match": "数据、自动化",
+     "careers_url": "https://www.aegon.com/careers",
+     "aliases": [
+      "^AEGON"
+     ],
+     "sponsor_patterns": [
+      "^AEGON"
+     ]
+    },
+    {
+     "name": "NN Group",
+     "sector": "保险",
+     "cities": "Den Haag, Rotterdam",
+     "directions": "MST",
+     "priority": "B",
+     "match": "数据、AI",
+     "careers_url": "https://www.nn-group.com/careers.htm",
+     "aliases": [
+      "^NN (Group|Insurance|Non-Life|Leven)",
+      "^Nationale-Nederlanden"
+     ],
+     "sponsor_patterns": [
+      "^NN (Group|Insurance|Non-Life|Leven)",
+      "^Nationale-Nederlanden"
+     ]
+    },
+    {
+     "name": "Achmea",
+     "sector": "保险",
+     "cities": "Zeist, Amsterdam",
+     "directions": "MS",
+     "priority": "C",
+     "match": "多数岗位要求荷兰语",
+     "careers_url": "https://www.werkenbijachmea.nl",
+     "aliases": [
+      "^Achmea"
+     ],
+     "sponsor_patterns": [
+      "^Achmea"
+     ]
+    },
+    {
+     "name": "a.s.r.",
+     "sector": "保险",
+     "cities": "Utrecht",
+     "directions": "MS",
+     "priority": "C",
+     "match": "多数岗位要求荷兰语",
+     "careers_url": "https://werkenbij.asr.nl",
+     "aliases": [
+      "^ASR Nederland",
+      "^a\\.s\\.r"
+     ],
+     "sponsor_patterns": [
+      "^ASR Nederland",
+      "^a\\.s\\.r"
+     ]
+    },
+    {
+     "name": "Accenture",
+     "sector": "IT与AI咨询",
+     "cities": "Amsterdam, Eindhoven",
+     "directions": "AMST",
+     "priority": "A",
+     "match": "AI/数据顾问、工业X(Industry X)",
+     "careers_url": "https://www.accenture.com/nl-en/careers",
+     "aliases": [
+      "^Accenture"
+     ],
+     "sponsor_patterns": [
+      "^Accenture"
+     ]
+    },
+    {
+     "name": "Capgemini（含 Capgemini Engineering / 原Altran）",
+     "sector": "IT与工程咨询",
+     "cities": "Utrecht, Eindhoven",
+     "directions": "AMST",
+     "priority": "A",
+     "match": "Engineering线服务ASML等高科技客户",
+     "careers_url": "https://www.capgemini.com/nl-nl/careers",
+     "aliases": [
+      "^Capgemini",
+      "^Sogeti",
+      "^Capgemini",
+      "^Altran",
+      "^Sogeti"
+     ],
+     "sponsor_patterns": [
+      "^Capgemini",
+      "^Altran",
+      "^Sogeti"
+     ]
+    },
+    {
+     "name": "Alten Nederland",
+     "sector": "工程与IT外包",
+     "cities": "Eindhoven, Rotterdam, Capelle",
+     "directions": "AMST",
+     "priority": "A",
+     "match": "高科技客户派驻，最常见的入门途径之一",
+     "careers_url": "https://www.alten.nl",
+     "aliases": [
+      "^Alten\\b"
+     ],
+     "sponsor_patterns": [
+      "^Alten\\b"
+     ]
+    },
+    {
+     "name": "Akkodis (原Modis/AKKA)",
+     "sector": "工程与IT外包",
+     "cities": "Eindhoven, Amsterdam",
+     "directions": "AMST",
+     "priority": "A",
+     "match": "高科技/汽车客户派驻",
+     "careers_url": "https://www.akkodis.com/nl-nl",
+     "aliases": [
+      "^Akkodis"
+     ],
+     "sponsor_patterns": [
+      "^Akkodis"
+     ]
+    },
+    {
+     "name": "Brunel",
+     "sector": "工程人才派遣",
+     "cities": "Amsterdam, Eindhoven",
+     "directions": "SMT",
+     "priority": "B",
+     "match": "派驻高科技客户",
+     "careers_url": "https://www.brunel.net/nl-nl",
+     "aliases": [
+      "^Brunel"
+     ],
+     "sponsor_patterns": [
+      "^Brunel"
+     ]
+    },
+    {
+     "name": "TMC Group",
+     "sector": "高科技工程派驻（Employeneurship）",
+     "cities": "Eindhoven",
+     "directions": "AMST",
+     "priority": "A",
+     "match": "以ASML/Philips为主要客户，招收国际人才较多",
+     "careers_url": "https://www.tmc-employeneurship.com",
+     "aliases": [
+      "^TMC\\b"
+     ],
+     "sponsor_patterns": [
+      "^TMC\\b"
+     ]
+    },
+    {
+     "name": "Sioux Technologies",
+     "sector": "高科技软件与机电研发外包",
+     "cities": "Eindhoven",
+     "directions": "AMST",
+     "priority": "A",
+     "match": "服务半导体设备客户，软件岗多",
+     "careers_url": "https://www.sioux.eu/careers",
+     "aliases": [
+      "^Sioux"
+     ],
+     "sponsor_patterns": [
+      "^Sioux"
+     ],
+     "sponsor_note": "主体 Sioux Technologies B.V. 不在名录，但 Sioux Expats B.V. 在（专门雇佣国际员工的实体）"
+    },
+    {
+     "name": "Itility",
+     "sector": "数据与云服务（服务ASML等）",
+     "cities": "Eindhoven",
+     "directions": "AMST",
+     "priority": "A",
+     "match": "数据工程、AI、顾问；Eindhoven本地",
+     "careers_url": "https://www.itility.nl",
+     "aliases": [
+      "^Itility"
+     ],
+     "sponsor_patterns": [
+      "^Itility"
+     ]
+    },
+    {
+     "name": "Bright Cape",
+     "sector": "数据与AI咨询",
+     "cities": "Eindhoven",
+     "directions": "AMT",
+     "priority": "A",
+     "match": "数据科学顾问；Eindhoven本地",
+     "careers_url": "https://www.brightcape.nl",
+     "aliases": [
+      "^Bright Cape"
+     ],
+     "sponsor_patterns": [
+      "^Bright Cape"
+     ]
+    },
+    {
+     "name": "Xebia",
+     "sector": "IT/数据/AI咨询",
+     "cities": "Hilversum, Amsterdam",
+     "directions": "AMST",
+     "priority": "B",
+     "match": "数据与AI顾问",
+     "careers_url": "https://xebia.com/careers",
+     "aliases": [
+      "^Xebia"
+     ],
+     "sponsor_patterns": [
+      "^Xebia"
+     ]
+    },
+    {
+     "name": "Xomnia",
+     "sector": "数据与AI咨询",
+     "cities": "Amsterdam",
+     "directions": "AMT",
+     "priority": "B",
+     "match": "数据科学顾问",
+     "careers_url": "https://www.xomnia.com",
+     "aliases": [
+      "^Xomnia"
+     ],
+     "sponsor_patterns": [
+      "^Xomnia"
+     ]
+    },
+    {
+     "name": "ORTEC",
+     "sector": "优化与数据科学",
+     "cities": "Zoetermeer",
+     "directions": "MST",
+     "priority": "B",
+     "match": "运筹优化、数据科学",
+     "careers_url": "https://ortec.com/careers",
+     "aliases": [
+      "^ORTEC\\b"
+     ],
+     "sponsor_patterns": [
+      "^ORTEC\\b"
+     ]
+    },
+    {
+     "name": "Deloitte Nederland",
+     "sector": "四大咨询",
+     "cities": "Amsterdam, Rotterdam",
+     "directions": "MT",
+     "priority": "B",
+     "match": "AI&Data顾问",
+     "careers_url": "https://www.deloitte.com/nl/en/careers.html",
+     "aliases": [
+      "^Deloitte"
+     ],
+     "sponsor_patterns": [
+      "^Deloitte"
+     ]
+    },
+    {
+     "name": "KPMG Nederland",
+     "sector": "四大咨询",
+     "cities": "Amstelveen",
+     "directions": "MT",
+     "priority": "C",
+     "match": "数据顾问",
+     "careers_url": "https://www.kpmg.com/nl/en/home/careers.html",
+     "aliases": [
+      "^KPMG"
+     ],
+     "sponsor_patterns": [
+      "^KPMG"
+     ],
+     "sponsor_note": "名录中仅有 KPMG Staffing & Facility Services B.V.，投递时确认雇佣实体"
+    },
+    {
+     "name": "EY Nederland",
+     "sector": "四大咨询",
+     "cities": "Amsterdam, Rotterdam",
+     "directions": "MT",
+     "priority": "C",
+     "match": "数据/AI顾问",
+     "careers_url": "https://www.ey.com/en_nl/careers",
+     "aliases": [
+      "^EY\\b",
+      "^Ernst",
+      "^Ernst & Young",
+      "^EY\\b"
+     ],
+     "sponsor_patterns": [
+      "^Ernst & Young",
+      "^EY\\b"
+     ]
+    },
+    {
+     "name": "PwC Nederland",
+     "sector": "四大咨询",
+     "cities": "Amsterdam",
+     "directions": "MT",
+     "priority": "C",
+     "match": "数据/AI顾问",
+     "careers_url": "https://www.pwc.nl/en/careers.html",
+     "aliases": [
+      "^PricewaterhouseCoopers",
+      "^PwC\\b"
+     ],
+     "sponsor_patterns": [
+      "^PricewaterhouseCoopers",
+      "^PwC\\b"
+     ]
+    },
+    {
+     "name": "McKinsey & Company (QuantumBlack)",
+     "sector": "战略与AI咨询",
+     "cities": "Amsterdam",
+     "directions": "AMT",
+     "priority": "C",
+     "match": "QuantumBlack 为AI部门；门槛高",
+     "careers_url": "https://www.mckinsey.com/careers",
+     "aliases": [
+      "McKinsey"
+     ],
+     "sponsor_patterns": [
+      "McKinsey"
+     ]
+    },
+    {
+     "name": "Boston Consulting Group (BCG X)",
+     "sector": "战略与AI咨询",
+     "cities": "Amsterdam",
+     "directions": "AMT",
+     "priority": "C",
+     "match": "BCG X 为技术部门；门槛高",
+     "careers_url": "https://careers.bcg.com",
+     "aliases": [
+      "Boston Consulting",
+      "^BCG",
+      "Boston Consulting"
+     ],
+     "sponsor_patterns": [
+      "Boston Consulting"
+     ]
+    },
+    {
+     "name": "Bain & Company",
+     "sector": "战略咨询",
+     "cities": "Amsterdam",
+     "directions": "T",
+     "priority": "C",
+     "match": "门槛高",
+     "careers_url": "https://www.bain.com/careers",
+     "aliases": [
+      "^Bain & Company"
+     ],
+     "sponsor_patterns": [
+      "^Bain & Company"
+     ]
+    },
+    {
+     "name": "CGI Nederland",
+     "sector": "IT咨询",
+     "cities": "Rotterdam, Amstelveen",
+     "directions": "ST",
+     "priority": "B",
+     "match": "IT顾问",
+     "careers_url": "https://www.cgi.com/en/careers",
+     "aliases": [
+      "^CGI\\b"
+     ],
+     "sponsor_patterns": [
+      "^CGI\\b"
+     ]
+    },
+    {
+     "name": "Cognizant",
+     "sector": "IT外包",
+     "cities": "Amsterdam",
+     "directions": "ST",
+     "priority": "B",
+     "match": "印度系外包，sponsor常见",
+     "careers_url": "https://careers.cognizant.com",
+     "aliases": [
+      "^Cognizant"
+     ],
+     "sponsor_patterns": [
+      "^Cognizant"
+     ]
+    },
+    {
+     "name": "Infosys",
+     "sector": "IT外包",
+     "cities": "Amsterdam",
+     "directions": "ST",
+     "priority": "B",
+     "match": "sponsor常见",
+     "careers_url": "https://www.infosys.com/careers",
+     "aliases": [
+      "^Infosys"
+     ],
+     "sponsor_patterns": [
+      "^Infosys"
+     ]
+    },
+    {
+     "name": "Tata Consultancy Services (TCS)",
+     "sector": "IT外包",
+     "cities": "Amstelveen",
+     "directions": "ST",
+     "priority": "B",
+     "match": "sponsor常见",
+     "careers_url": "https://www.tcs.com/careers",
+     "aliases": [
+      "^Tata Consultancy"
+     ],
+     "sponsor_patterns": [
+      "^Tata Consultancy"
+     ]
+    },
+    {
+     "name": "HCLTech",
+     "sector": "IT外包",
+     "cities": "Amsterdam",
+     "directions": "ST",
+     "priority": "C",
+     "match": "sponsor常见",
+     "careers_url": "https://www.hcltech.com/careers",
+     "aliases": [
+      "^HCLTech",
+      "^HCL\\b"
+     ],
+     "sponsor_patterns": [
+      "^HCL\\b"
+     ]
+    },
+    {
+     "name": "Wipro",
+     "sector": "IT外包",
+     "cities": "Amsterdam",
+     "directions": "ST",
+     "priority": "C",
+     "match": "sponsor常见",
+     "careers_url": "https://careers.wipro.com",
+     "aliases": [
+      "^Wipro"
+     ],
+     "sponsor_patterns": [
+      "^Wipro"
+     ]
+    },
+    {
+     "name": "Atos",
+     "sector": "IT服务",
+     "cities": "Amstelveen",
+     "directions": "ST",
+     "priority": "C",
+     "match": "IT服务",
+     "careers_url": "https://atos.net/en/careers",
+     "aliases": [
+      "^Atos\\b"
+     ],
+     "sponsor_patterns": [
+      "^Atos\\b"
+     ]
+    },
+    {
+     "name": "Sopra Steria（含原 Ordina）",
+     "sector": "IT服务",
+     "cities": "Nieuwegein",
+     "directions": "ST",
+     "priority": "C",
+     "match": "多数岗位要求荷兰语",
+     "careers_url": "https://www.soprasteria.nl",
+     "aliases": [
+      "^Sopra Steria",
+      "^Ordina"
+     ],
+     "sponsor_patterns": [
+      "^Sopra Steria",
+      "^Ordina"
+     ]
+    },
+    {
+     "name": "Devoteam",
+     "sector": "云与AI咨询",
+     "cities": "Amsterdam",
+     "directions": "AT",
+     "priority": "C",
+     "match": "云/AI顾问",
+     "careers_url": "https://nl.devoteam.com",
+     "aliases": [
+      "^Devoteam"
+     ],
+     "sponsor_patterns": [
+      "^Devoteam"
+     ]
+    },
+    {
+     "name": "Ctac",
+     "sector": "SAP/IT咨询",
+     "cities": "'s-Hertogenbosch",
+     "directions": "ST",
+     "priority": "C",
+     "match": "制造业客户多",
+     "careers_url": "https://www.ctac.nl",
+     "aliases": [
+      "^Ctac"
+     ],
+     "sponsor_patterns": [
+      "^Ctac"
+     ]
+    },
+    {
+     "name": "Technolution",
+     "sector": "高科技软件与电子外包",
+     "cities": "Gouda",
+     "directions": "S",
+     "priority": "C",
+     "match": "嵌入式与软件",
+     "careers_url": "https://www.technolution.com",
+     "aliases": [
+      "^Technolution"
+     ],
+     "sponsor_patterns": [
+      "^Technolution"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "第四梯队",
+   "title": "第四梯队：其他适合的行业（医疗科技、能源、交通、零售、AI 初创等）",
+   "rationale": "",
+   "companies": [
+    {
+     "name": "Philips（含 Healthcare / Research）",
+     "sector": "医疗科技",
+     "cities": "Eindhoven, Best, Amsterdam",
+     "directions": "AMS",
+     "priority": "A",
+     "match": "医疗影像AI、数据、软件；Eindhoven研发多",
+     "careers_url": "https://www.careers.philips.com",
+     "aliases": [
+      "^Philips\\b",
+      "^Koninklijke Philips"
+     ],
+     "sponsor_patterns": [
+      "^Philips\\b",
+      "^Koninklijke Philips"
+     ]
+    },
+    {
+     "name": "Thales Nederland",
+     "sector": "国防与雷达",
+     "cities": "Hengelo, Delft",
+     "directions": "SA",
+     "priority": "C",
+     "match": "部分岗位要求安全审查/欧盟国籍",
+     "careers_url": "https://careers.thalesgroup.com",
+     "aliases": [
+      "^Thales"
+     ],
+     "sponsor_patterns": [
+      "^Thales"
+     ]
+    },
+    {
+     "name": "Airbus Netherlands",
+     "sector": "航空航天",
+     "cities": "Leiden",
+     "directions": "S",
+     "priority": "C",
+     "match": "部分岗位要求安全审查",
+     "careers_url": "https://www.airbus.com/en/careers",
+     "aliases": [
+      "^Airbus"
+     ],
+     "sponsor_patterns": [
+      "^Airbus"
+     ]
+    },
+    {
+     "name": "TomTom",
+     "sector": "地图与导航",
+     "cities": "Amsterdam",
+     "directions": "AMS",
+     "priority": "B",
+     "match": "地图AI、数据",
+     "careers_url": "https://www.tomtom.com/careers",
+     "aliases": [
+      "^TomTom"
+     ],
+     "sponsor_patterns": [
+      "^TomTom"
+     ]
+    },
+    {
+     "name": "Shell（Amsterdam 技术中心）",
+     "sector": "能源",
+     "cities": "Amsterdam, Den Haag",
+     "directions": "AMST",
+     "priority": "B",
+     "match": "数据科学、AI、数字化",
+     "careers_url": "https://www.shell.com/careers",
+     "aliases": [
+      "^Shell\\b"
+     ],
+     "sponsor_patterns": [
+      "^Shell\\b"
+     ]
+    },
+    {
+     "name": "KLM",
+     "sector": "航空",
+     "cities": "Amstelveen",
+     "directions": "AMS",
+     "priority": "B",
+     "match": "数据科学、运营优化",
+     "careers_url": "https://careers.klm.com",
+     "aliases": [
+      "^KLM\\b",
+      "Koninklijke Luchtvaart"
+     ],
+     "sponsor_patterns": [
+      "^KLM\\b",
+      "Koninklijke Luchtvaart"
+     ]
+    },
+    {
+     "name": "DSM-Firmenich",
+     "sector": "化工与营养",
+     "cities": "Maastricht, Delft",
+     "directions": "MS",
+     "priority": "C",
+     "match": "过程数据、AI",
+     "careers_url": "https://jobs.dsm-firmenich.com",
+     "aliases": [
+      "DSM",
+      "Firmenich"
+     ],
+     "sponsor_patterns": [
+      "DSM",
+      "Firmenich"
+     ]
+    },
+    {
+     "name": "AkzoNobel",
+     "sector": "涂料与化工",
+     "cities": "Amsterdam, Sassenheim",
+     "directions": "MS",
+     "priority": "C",
+     "match": "制造数据",
+     "careers_url": "https://www.akzonobel.com/en/careers",
+     "aliases": [
+      "^Akzo ?Nobel"
+     ],
+     "sponsor_patterns": [
+      "^Akzo ?Nobel"
+     ]
+    },
+    {
+     "name": "Unilever",
+     "sector": "快消",
+     "cities": "Rotterdam",
+     "directions": "MT",
+     "priority": "C",
+     "match": "数据、自动化",
+     "careers_url": "https://careers.unilever.com",
+     "aliases": [
+      "^Unilever"
+     ],
+     "sponsor_patterns": [
+      "^Unilever"
+     ]
+    },
+    {
+     "name": "Heineken",
+     "sector": "快消",
+     "cities": "Amsterdam",
+     "directions": "MST",
+     "priority": "C",
+     "match": "数据、数字化",
+     "careers_url": "https://careers.theheinekencompany.com",
+     "aliases": [
+      "^Heineken"
+     ],
+     "sponsor_patterns": [
+      "^Heineken"
+     ]
+    },
+    {
+     "name": "Ahold Delhaize",
+     "sector": "零售",
+     "cities": "Zaandam",
+     "directions": "MS",
+     "priority": "C",
+     "match": "数据、AI",
+     "careers_url": "https://www.aholddelhaize.com/careers",
+     "aliases": [
+      "^Ahold"
+     ],
+     "sponsor_patterns": [
+      "^Ahold"
+     ]
+    },
+    {
+     "name": "Coolblue",
+     "sector": "电商",
+     "cities": "Rotterdam",
+     "directions": "MS",
+     "priority": "C",
+     "match": "软件、数据",
+     "careers_url": "https://www.careersatcoolblue.com",
+     "aliases": [
+      "^Coolblue"
+     ],
+     "sponsor_patterns": [
+      "^Coolblue"
+     ]
+    },
+    {
+     "name": "Wolters Kluwer",
+     "sector": "信息与软件",
+     "cities": "Alphen aan den Rijn",
+     "directions": "AS",
+     "priority": "C",
+     "match": "GenAI产品",
+     "careers_url": "https://careers.wolterskluwer.com",
+     "aliases": [
+      "^Wolters Kluwer"
+     ],
+     "sponsor_patterns": [
+      "^Wolters Kluwer"
+     ]
+    },
+    {
+     "name": "Elsevier (RELX)",
+     "sector": "科学信息与AI",
+     "cities": "Amsterdam",
+     "directions": "AMS",
+     "priority": "B",
+     "match": "NLP/RAG产品，与 RAG 项目经验对口",
+     "careers_url": "https://www.relx.com/careers",
+     "aliases": [
+      "^Elsevier",
+      "^RELX"
+     ],
+     "sponsor_patterns": [
+      "^Elsevier",
+      "^RELX"
+     ]
+    },
+    {
+     "name": "Exact",
+     "sector": "企业软件",
+     "cities": "Delft",
+     "directions": "ST",
+     "priority": "C",
+     "match": "软件开发",
+     "careers_url": "https://www.exact.com/careers",
+     "aliases": [
+      "^Exact$",
+      "^Exact (B\\.V\\.|Cloud)"
+     ],
+     "sponsor_patterns": [
+      "^Exact (B\\.V\\.|Cloud)"
+     ]
+    },
+    {
+     "name": "Weaviate",
+     "sector": "向量数据库（AI基础设施）",
+     "cities": "Amsterdam（远程友好）",
+     "directions": "AS",
+     "priority": "B",
+     "match": "与pgvector/RAG经验相关",
+     "careers_url": "https://weaviate.io/company/careers",
+     "aliases": [
+      "^Weaviate",
+      "^SeMI"
+     ],
+     "sponsor_patterns": [
+      "^Weaviate",
+      "^SeMI"
+     ]
+    },
+    {
+     "name": "Cradle",
+     "sector": "AI 蛋白质设计",
+     "cities": "Amsterdam",
+     "directions": "AM",
+     "priority": "C",
+     "match": "ML工程",
+     "careers_url": "https://www.cradle.bio",
+     "aliases": [
+      "^Cradle"
+     ],
+     "sponsor_patterns": [
+      "^Cradle"
+     ]
+    },
+    {
+     "name": "Catawiki",
+     "sector": "在线拍卖",
+     "cities": "Amsterdam",
+     "directions": "MS",
+     "priority": "C",
+     "match": "数据、软件",
+     "careers_url": "https://www.catawiki.com/careers",
+     "aliases": [
+      "^Catawiki"
+     ],
+     "sponsor_patterns": [
+      "^Catawiki"
+     ]
+    },
+    {
+     "name": "Channable",
+     "sector": "电商SaaS",
+     "cities": "Utrecht",
+     "directions": "SA",
+     "priority": "C",
+     "match": "后端",
+     "careers_url": "https://www.channable.com/careers",
+     "aliases": [
+      "^Channable"
+     ],
+     "sponsor_patterns": [
+      "^Channable"
+     ]
+    },
+    {
+     "name": "Damen Shipyards",
+     "sector": "造船",
+     "cities": "Gorinchem",
+     "directions": "SM",
+     "priority": "C",
+     "match": "工程软件、数据",
+     "careers_url": "https://www.damen.com/careers",
+     "aliases": [
+      "^Damen"
+     ],
+     "sponsor_patterns": [
+      "^Damen"
+     ]
+    },
+    {
+     "name": "Allseas",
+     "sector": "海洋工程",
+     "cities": "Delft",
+     "directions": "SM",
+     "priority": "C",
+     "match": "工程软件",
+     "careers_url": "https://allseas.com/careers",
+     "aliases": [
+      "^Allseas"
+     ],
+     "sponsor_patterns": [
+      "^Allseas"
+     ]
+    },
+    {
+     "name": "Boskalis",
+     "sector": "疏浚与海事",
+     "cities": "Papendrecht",
+     "directions": "MS",
+     "priority": "C",
+     "match": "数据",
+     "careers_url": "https://boskalis.com/careers",
+     "aliases": [
+      "Boskalis"
+     ],
+     "sponsor_patterns": [
+      "Boskalis"
+     ]
+    },
+    {
+     "name": "Van Oord",
+     "sector": "疏浚与海事",
+     "cities": "Rotterdam",
+     "directions": "MS",
+     "priority": "C",
+     "match": "数据",
+     "careers_url": "https://www.vanoord.com/en/careers",
+     "aliases": [
+      "^Van Oord"
+     ],
+     "sponsor_patterns": [
+      "^Van Oord"
+     ]
+    },
+    {
+     "name": "KPN",
+     "sector": "电信 / IoT",
+     "cities": "Rotterdam, Amsterdam",
+     "directions": "MS",
+     "priority": "C",
+     "match": "多数岗位要求荷兰语",
+     "careers_url": "https://www.kpn.com/werkenbij",
+     "aliases": [
+      "^KPN\\b",
+      "^Koninklijke KPN"
+     ],
+     "sponsor_patterns": [
+      "^KPN\\b",
+      "^Koninklijke KPN"
+     ]
+    },
+    {
+     "name": "Port of Rotterdam",
+     "sector": "港口数字化",
+     "cities": "Rotterdam",
+     "directions": "MT",
+     "priority": "C",
+     "match": "数字孪生港口",
+     "careers_url": "https://www.portofrotterdam.com/en/about-port-authority/careers",
+     "aliases": [
+      "Havenbedrijf Rotterdam",
+      "Port of Rotterdam"
+     ],
+     "sponsor_patterns": [
+      "Havenbedrijf Rotterdam",
+      "Port of Rotterdam"
+     ]
+    },
+    {
+     "name": "Mistral AI (荷兰)",
+     "sector": "大模型公司",
+     "cities": "Amsterdam",
+     "directions": "AS",
+     "priority": "C",
+     "match": "LLM 应用/解决方案；法国总部，可作欧洲 sponsor 备选",
+     "careers_url": "https://mistral.ai/careers",
+     "aliases": [
+      "^Mistral AI"
+     ],
+     "sponsor_patterns": [
+      "^Mistral AI"
+     ]
+    },
+    {
+     "name": "Slimmer AI",
+     "sector": "AI 产品工作室",
+     "cities": "Groningen",
+     "directions": "AMS",
+     "priority": "C",
+     "match": "应用 AI、ML 工程",
+     "careers_url": "https://www.slimmer.ai",
+     "aliases": [
+      "^Slimmer AI"
+     ],
+     "sponsor_patterns": [
+      "^Slimmer AI"
+     ]
+    }
+   ]
+  }
+ ],
+ "background": {
+  "title": "个人背景与求职定位",
+  "rows": [
+   [
+    "姓名 / 所在地",
+    "你的名字｜城市｜居留类型（如 zoekjaar）"
+   ],
+   [
+    "学历",
+    "学位、学校、年份"
+   ],
+   [
+    "核心经历",
+    "最近的工作经历和成果"
+   ],
+   [
+    "语言",
+    "英语 / 荷兰语水平"
+   ],
+   [
+    "差异化卖点",
+    "你最强的匹配点"
+   ],
+   [
+    "签证目标",
+    "如：IND 认可担保人 + 高技术移民降低薪资标准"
+   ]
+  ]
+ },
+ "channels": [
+  {
+   "name": "LinkedIn Jobs",
+   "type": "综合招聘平台",
+   "url": "https://www.linkedin.com/jobs",
+   "directions": "全部",
+   "feature": "荷兰科技岗位最主要来源；可筛选英语岗位，猎头活跃",
+   "tips": "设置 Netherlands + 关键词每日提醒；资料页写明 orientation year 持有人、无需立即担保（降低薪资标准）",
+   "priority": "A"
+  },
+  {
+   "name": "Indeed Nederland",
+   "type": "综合招聘平台",
+   "url": "https://nl.indeed.com",
+   "directions": "全部",
+   "feature": "岗位量大，含中小企业与外包公司",
+   "tips": "搜索加 \"English\" \"visa sponsorship\" 关键词",
+   "priority": "A"
+  },
+  {
+   "name": "Glassdoor",
+   "type": "招聘 + 公司点评",
+   "url": "https://www.glassdoor.nl",
+   "directions": "全部",
+   "feature": "可查薪资与面试经验",
+   "tips": "投递前看目标公司面试题与薪资区间",
+   "priority": "B"
+  },
+  {
+   "name": "Nationale Vacaturebank",
+   "type": "荷兰本土招聘",
+   "url": "https://www.nationalevacaturebank.nl",
+   "directions": "SW / ML",
+   "feature": "荷兰本地岗位多，部分需荷兰语",
+   "tips": "作为补充，筛选英文职位",
+   "priority": "C"
+  },
+  {
+   "name": "werk.nl (UWV)",
+   "type": "政府就业平台",
+   "url": "https://www.werk.nl",
+   "directions": "全部",
+   "feature": "官方平台，岗位以本地为主",
+   "tips": "补充渠道",
+   "priority": "C"
+  },
+  {
+   "name": "IamExpat Jobs",
+   "type": "外籍人士招聘",
+   "url": "https://www.iamexpat.nl/career/jobs-netherlands",
+   "directions": "全部",
+   "feature": "专注英语岗位，很多雇主是认可担保人",
+   "tips": "每日浏览 IT/Engineering 分类",
+   "priority": "A"
+  },
+  {
+   "name": "Undutchables",
+   "type": "外籍人士招聘中介",
+   "url": "https://undutchables.nl",
+   "directions": "SW / TC",
+   "feature": "专门为不会荷兰语的国际人才推荐岗位",
+   "tips": "注册并主动联系顾问",
+   "priority": "B"
+  },
+  {
+   "name": "Magnet.me",
+   "type": "毕业生/初级岗位平台",
+   "url": "https://magnet.me",
+   "directions": "全部",
+   "feature": "面向毕业生和初级岗位，有 English-only 筛选",
+   "tips": "适合 junior / medior 岗位",
+   "priority": "B"
+  },
+  {
+   "name": "Welcome to the Jungle (原 Otta)",
+   "type": "科技公司招聘",
+   "url": "https://www.welcometothejungle.com",
+   "directions": "AI / ML / SW",
+   "feature": "科技初创与成长型公司为主，标注是否提供签证担保",
+   "tips": "利用“Visa sponsorship”筛选",
+   "priority": "B"
+  },
+  {
+   "name": "Wellfound (原 AngelList)",
+   "type": "初创公司招聘",
+   "url": "https://wellfound.com",
+   "directions": "AI / SW",
+   "feature": "初创公司，部分可担保",
+   "tips": "关注 Amsterdam/Eindhoven AI 初创",
+   "priority": "C"
+  },
+  {
+   "name": "Relocate.me",
+   "type": "海外迁居岗位",
+   "url": "https://relocate.me",
+   "directions": "SW / AI",
+   "feature": "只收录提供搬迁/签证支持的岗位",
+   "tips": "直接筛选荷兰",
+   "priority": "B"
+  },
+  {
+   "name": "EURES",
+   "type": "欧盟官方就业门户",
+   "url": "https://eures.europa.eu",
+   "directions": "全部",
+   "feature": "覆盖全欧盟，适合找“欧洲担保”备选",
+   "tips": "作为欧盟蓝卡备选渠道",
+   "priority": "C"
+  },
+  {
+   "name": "StepStone / XING",
+   "type": "德国/欧洲招聘平台",
+   "url": "https://www.stepstone.de",
+   "directions": "全部",
+   "feature": "德国岗位多，适合欧盟蓝卡备选（德国半导体：Infineon、Bosch、Zeiss）",
+   "tips": "备选，需要时启用",
+   "priority": "C"
+  },
+  {
+   "name": "Brainport Eindhoven",
+   "type": "区域高科技生态",
+   "url": "https://brainporteindhoven.com",
+   "directions": "全部",
+   "feature": "Eindhoven 高科技产业集群（ASML 供应链），有职位与活动信息",
+   "tips": "关注招聘会与 Brainport 公司名单",
+   "priority": "A"
+  },
+  {
+   "name": "Holland Expat Center South",
+   "type": "Eindhoven 外籍人士服务",
+   "url": "https://www.hollandexpatcenter.com",
+   "directions": "全部",
+   "feature": "提供招聘活动、职业讲座、移民咨询",
+   "tips": "参加 career events，拓展人脉",
+   "priority": "B"
+  },
+  {
+   "name": "High Tech NL / Mikrocentrum 招聘会",
+   "type": "行业活动",
+   "url": "https://www.mikrocentrum.nl",
+   "directions": "全部",
+   "feature": "高科技与精密制造行业活动（如 High Tech Systems 展会）",
+   "tips": "线下认识第一梯队供应链公司",
+   "priority": "B"
+  },
+  {
+   "name": "TMC / Alten / Akkodis / Brunel 等派驻公司",
+   "type": "工程外包与派驻",
+   "url": "https://www.tmc-employeneurship.com",
+   "directions": "全部",
+   "feature": "这些公司自身多为认可担保人，派驻到 ASML 等客户",
+   "tips": "进入第一梯队客户的“侧门”，见第三梯队标签页",
+   "priority": "A"
+  },
+  {
+   "name": "Hays / Michael Page / Robert Walters",
+   "type": "猎头",
+   "url": "https://www.hays.nl",
+   "directions": "全部",
+   "feature": "覆盖中高级 IT 与数据岗位",
+   "tips": "上传 CV，与 IT 顾问建立联系",
+   "priority": "B"
+  },
+  {
+   "name": "公司官网招聘页",
+   "type": "直接投递",
+   "url": "（见各梯队标签页“招聘页”列）",
+   "directions": "全部",
+   "feature": "很多岗位只在官网发布，信息最准",
+   "tips": "第一梯队公司每周检查一次官网",
+   "priority": "A"
+  },
+  {
+   "name": "IND 认可担保人名录",
+   "type": "签证资质核对工具",
+   "url": "https://ind.nl/en/public-register-recognised-sponsors/public-register-work",
+   "directions": "全部",
+   "feature": "官方名单，每月更新",
+   "tips": "任何公司投递前先 Ctrl+F 核对",
+   "priority": "A"
+  },
+  {
+   "name": "Levels.fyi",
+   "type": "薪资数据",
+   "url": "https://www.levels.fyi",
+   "directions": "全部",
+   "feature": "科技公司薪资对比",
+   "tips": "谈薪参考；确认岗位能达到 €3,122/月标准",
+   "priority": "C"
+  }
+ ],
+ "overview_notes": [
+  [
+   "签证要点（2026）",
+   "持 zoekjaar（orientation year）转高技术移民(kennismigrant)可用“降低薪资标准”：每月税前 €3,122（不含假期补贴）；常规标准 30 岁以下 €4,357、30 岁及以上 €5,942；欧盟蓝卡 €5,942（降低标准 €4,754）。雇主必须是 IND 认可担保人（erkend referent）。"
+  ]
+ ]
+}
